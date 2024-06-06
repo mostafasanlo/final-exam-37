@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>foods</title>
+
     <link rel="stylesheet" href="scr/sass/style.scss">
     <script type="madule" src="scr/js/script.js"></script>
-</head>
-<body>
     
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Restaurant Menu</h1>
+        <!-- _________________________ -->
+        <div class="tabs">
+          <button class="tab" data-category="Pizzas" onclick="foodData('Pizzas')"> Pizzas</button>
+          <button class="tab" data-category="Burgers" onclick="foodData('Burgers')">Burgers</button>
+          <button class="tab" data-category="Drinks" onclick="foodData('Drinks')">Drinks</button>
+        </div>
+        <!-- __________________________ -->
+
+        <div id="food-container" class="food-container"></div>
+        <!-- __________________________ -->
+        <div class="cart">
+          <h2>Cart: <span id="cart-count">0</span> items</h2>
+          <p>Total Price: $<span id="total-price">0.00</span></p>
+        </div>
+        <!-- __________________________ -->
+      </div>
+      
 </body>
 </html>
